@@ -1,0 +1,280 @@
+/***************************************************************/
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(3, 65, 94);
+}
+
+body {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(230, 224, 206);
+  margin:auto;
+  position:relative;
+  top:-5px;
+}
+
+header {
+  margin:auto;
+  width: 70%;
+  background-color: ivory;
+  position:relative;
+  top:25px;
+  border:3px solid rgb(37, 120, 135);
+  border-radius:5px;
+  font-family: "Chivo Mono";
+}
+
+header h1{
+  line-height: 2em;
+  font-size:1.6em;
+  text-align: center;
+  color:crimson;
+  text-shadow: 1px 1px #777;
+  font-family: "Chivo Mono";
+}
+
+main{
+  position:relative;
+  top:100px;
+}
+
+table{
+  margin:auto;
+  width:80%; 
+  border:1px solid crimson;
+  border-radius:5px;
+  box-shadow: 4px 4px 15px #777;
+}
+
+div.ticket{
+position:fixed;
+top:205px;
+right: 35px;
+width: 260px;
+display:block;
+visibility:hidden;
+z-index: 99;
+overflow: hidden;
+max-height: 605px;
+background-color: ivory;
+border-top:2px dotted rgb(46, 2, 2);
+border-left:2px solid rgb(46, 2, 2);
+border-right:2px solid rgb(46, 2, 2);
+border-bottom:2px dotted rgb(46, 2, 2);
+box-shadow: 4px 5px 15px #777;
+font-family: "Chivo Mono";
+}
+
+#ticket h2{
+font-size:larger;
+text-shadow: 1px 1px #777;
+text-decoration: underline;
+margin-top: 15px;
+
+}
+
+h2,h4,h5{
+text-align: center;
+margin-bottom: 20px;
+font-weight: bold;
+font-family: "Chivo Mono";
+}
+
+h4,h5{
+font-size:small;
+} 
+
+
+table.tabticket{
+width: 95%;
+font-size: 0.6em;
+border:none;
+box-shadow: none;
+}
+
+.cabticket{
+ border-bottom: 2px double black;
+ border-top: 1px dotted black;
+ 
+
+}
+
+table.tabticket th{
+font-weight:bold;
+color:rgb(4, 4, 87);
+}
+
+
+.concept{
+width: 35%;
+text-align: left;
+}
+
+.peso{
+width: 20%;
+text-align: right;
+}
+.pvp{
+width: 20%;
+text-align: right;
+}
+.stl{
+width: 25%;
+text-align: right;
+}
+
+.par{
+background-color: rgba(0, 206, 209, 0.534);
+}
+
+.impar{
+background-color: transparent;
+}
+
+
+.bodyticket{
+border-bottom: 2px double black;
+margin-bottom: 5px;
+}
+
+.totalizar{
+border-top: 4px double black;
+}
+
+tr.totalizar td{
+font-size: x-small;
+font-weight: bold;
+margin-right: 5px;
+text-align: right;
+}
+
+table[name="displays"] td.rotulo{
+background-color: azure;
+color:rgb(1, 1, 3);
+font-size:1.3em;
+font-weight: bold;
+line-height: 1.7em;
+width: 12.5%;
+border:1px solid rgb(8, 7, 7);
+padding-left: 30px;
+font-family: "Chivo Mono";
+}
+
+table[name="displays"] td.cantidad{
+  background-color: rgb(218, 86, 185);
+  color: rgb(246, 247, 245);
+  font-size:1.3em;
+  font-weight: bold;
+  width:12.5%;
+  border:1px solid ivory;
+  text-align: right;
+  line-height: 1.7em;
+  padding-right: 30px;
+}
+
+
+table[name="displays"] td.rotulo2{
+  background-color: azure;
+  color:rgb(255, 0, 128);
+  font-size:1.3em;
+  font-weight: bold;
+  line-height: 1.7em;
+  width: 25%;
+  border:1px solid rgb(126, 42, 165);
+  text-align: center;
+  font-family: "Chivo Mono";
+}
+
+table[name="displays"] td.cantidad2{
+    background-color: rgb(46, 101, 105);
+    color: rgb(227, 228, 226);
+    font-size:3em;
+    font-weight: bold;
+    width:25%;
+    border:1px solid ivory;
+    text-align: center;
+    /*line-height: 3.5em;*/
+    padding-right: 30px;
+  }
+
+
+
+/**************************************************************/
+
+table[name="botonera"] td{
+  background-color: rgb(240, 223, 241);
+  border:1px solid rgb(196, 139, 181);
+  border-radius:5px;
+  box-shadow: 4px 4px 15px #777;
+  width: 20%;
+  height: 33%;
+  
+}
+
+table[name="botonera"] td:hover{cursor:pointer}
+
+
+figure{
+  margin:auto;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 50%;
+   /*border:1px solid grey;*/
+}
+
+figure img{
+  width: 85%;
+  margin:auto;
+}
+
+figcaption{
+  color:rgb(177, 18, 66);
+  font-size:1.3em;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Chivo Mono";
+}
+
+#control{
+  position:relative;
+  top:15px;
+  margin:auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+/*  border:2px solid rgb(243, 28, 132);
+  border-radius: 5px;
+  background-color:rgba(243, 28, 132, 0.502); 
+  box-shadow: 4px 5px 15px #777;*/
+}
+
+input[type="button"]{
+  
+background-color: rgb(11, 107, 145);
+color:ivory;
+border:2px solid ivory;
+border-radius:5px;
+font-size:1.5em;
+line-height: 1.8em;
+padding:5px;
+min-width: 180px;
+font-family: "Chivo Mono";
+}
+
+input:hover{
+  cursor:pointer;
+  background-color: rgb(89, 211, 248);
+  color:rgb(105, 41, 244);
+  font-family: "Chivo Mono";
+}
+/**********************************************************/
+body {
+background-color: #f9f7f3;
+background-image: url(../img/fondo.jpg);
+align-content: center;
+}

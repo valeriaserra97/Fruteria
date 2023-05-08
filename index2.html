@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.google.com/specimen/Chivo+Mono" rel="stylesheet"/> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/miEstilo2.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Chivo+Mono"/>
+    <title>Fruteria</title>
+</head>
+<body>
+    <body>
+      <header>
+        <h1>B&Aacute;SCULA AUTOM&Aacute;TICA</h1>    
+      </header>
+      <br><br><br>
+      <main>
+          <div id="ticket" class="ticket">
+                  <h2>Mini Market</h2>
+                  <h4>Ticket de Compra</h4>
+                  <h5 id="ahora"></h5>
+                  <table class="tabticket">
+                    <thead class="cabticket">
+                        <tr>
+                          <th class="concept">
+                          Articulo
+                          </th>
+                          <th class="peso">
+                            Peso<br/>(Kg)
+                          </th>
+                          <th class="pvp">
+                            Precio<br>(€/Kg)
+                          </th>
+                          <th class="stl">
+                            Importe<br>(€)
+                          </th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo" class="bodyticket"></tbody>
+                  </table>
+                  <br><br>
+          </div> 
+          <table name="displays">
+          <tbody><tr>
+              <td class="rotulo">Articulo:</td>
+              <td class="cantidad" id="articulo">- -</td>
+              <td rowspan="2" class="rotulo2">TOTAL COMPRA</td>
+             
+         </tr>
+  
+         <tr>     
+              <td class="rotulo">€uros/Kg:</td>
+              <td class="cantidad" id="precio">0.00  €.</td>
+              
+          </tr>
+  
+          <tr>
+            <td class="rotulo">Peso(en Kg):</td>
+            <td class="cantidad" id="peso">0.00 Kg.</td>
+            <td rowspan="2" class="cantidad2" id="TC">0.00 €.</td>
+       </tr>
+  
+       <tr>
+        <td class="rotulo">Importe:</td>
+        <td class="cantidad" id="importe">0.00  €.</td>
+       </tr>
+  
+          </tbody></table>
+          <br>
+          
+          <table name="botonera">
+              <!--1º fila-->
+              <tbody><tr>
+                  <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(0);">
+                    <figure>
+                      <img src="./png/arandano.png" alt="Arandano">
+                      <figcaption>Arandano</figcaption>
+                    </figure>
+                  </td>
+                  <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(1);">
+                      <figure>
+                        <img src="./png/bayas.png" alt="bayas">
+                        <figcaption>Bayas</figcaption>
+                      </figure>
+                  </td>
+                  <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(2);">
+                      <figure>
+                        <img src="./png/cereza.png" alt="Cereza">
+                        <figcaption>Cereza</figcaption>
+                      </figure>
+                    </td>
+                    <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(3);">
+                      <figure>
+                          <img src="./png/frambuesa.png" alt="Frambuesa">
+                          <figcaption>Frambuesa</figcaption>
+                        </figure>
+                    </td>
+                    <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(4);">
+                      <figure>
+                        <img src="./png/fresa.png" alt="Fresa">
+                        <figcaption>Fresa</figcaption>
+                      </figure>
+                  </td>
+             </tr>
+             <!--2º fila-->
+             <tr>
+              <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(5);">
+                <figure>
+                  <img src="./png/granada.png" alt="Granada">
+                  <figcaption>Granada</figcaption>
+                </figure>
+              </td>
+              <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(6);">
+                  <figure>
+                    <img src="./png/kiwi.png" alt="kiwi">
+                    <figcaption>Kiwi</figcaption>
+                  </figure>
+              </td>
+              <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(7);" style="background-color: rgb(223, 233, 241);">
+                  <figure>
+                    <img src="./png/limon.png" alt="Limon">
+                    <figcaption>Limon</figcaption>
+                  </figure>
+                </td>
+                <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(8);">
+                  <figure>
+                      <img src="./png/manzanaVerde.png" alt="manzanaVerde">
+                      <figcaption>Manzana Verde</figcaption>
+                    </figure>
+                </td>
+                <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(9);">
+                  <figure>
+                    <img src="./png/melocoton.png" alt="Melocotón">
+                    <figcaption>Melocotón</figcaption>
+                  </figure>
+              </td>
+         </tr>
+         <!--3º fila-->
+         <tr>
+          <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(10);">
+            <figure>
+              <img src="./png/mora.png" alt="Mora">
+              <figcaption>Mora</figcaption>
+            </figure>
+          </td>
+          <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(11);">
+              <figure>
+                <img src="./png/naranja.png" alt="Naranja">
+                <figcaption>Naranja</figcaption>
+              </figure>
+          </td>
+          <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(12);">
+              <figure>
+                <img src="./png/pera.png" alt="Pera">
+                <figcaption>Peras</figcaption>
+              </figure>
+            </td>
+            <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(13);">
+              <figure>
+                  <img src="./png/pina.png" alt="Piña">
+                  <figcaption>Piña</figcaption>
+                </figure>
+            </td>
+            <td onmousedown="Press(this)" onmouseup="unPress(this);" onclick="Select(14);">
+              <figure>
+                <img src="./png/sandia.png" alt="sandia">
+                <figcaption>Sandía</figcaption>
+              </figure>
+           </td>
+     </tr>    
+             </tbody></table>
+  
+             <div id="control">
+               <input type="button" value="Nueva Compra" onclick="Limpiar('N');">&nbsp;
+               <input type="button" value="Limpiar" onclick="Limpiar('l');">&nbsp;
+               <input type="button" value="Pesar" onclick="Pesar();">&nbsp;
+               <input type="button" value="Añadir" onclick="Add();">&nbsp;
+               <input type="button" value="Fin Compra" onclick="Terminar()">&nbsp;
+             </div>
+             <br>
+  
+  
+      </main>
+  
+  <script src="js/bascula.js" languaje="javascript" type="text/javascript"></script>
+  </body></html>
